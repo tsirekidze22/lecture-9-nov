@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Mulish:wght@400;700&display=swap");
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
+  padding: 0px 25px 0px 52px;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+}
+
+.arrow-icon {
+  margin-left: 11.5px;
+}
+
+.btns-wrapper {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.log-in {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.styled-btn {
+  height: 42px;
+  width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90.09deg, #ff748d 0%, #ff8e4f 100%);
+  border-radius: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Main Section */
+.main-section {
+  height: 430px;
+  width: 100%;
+  padding-top: 58px;
+  background-image: url("../images/main-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-content {
+  margin: 0 auto;
+  display: flex;
+  padding-top: 57px;
+  flex-direction: column;
+  align-items: center;
+  width: 645px;
+  height: 319px;
+  color: #fff;
+  background: rgba(9, 24, 63, 0.5);
+  box-shadow: 0px 14px 25px -10px rgba(9, 24, 63, 0.17);
+  border-radius: 10px;
+}
+
+.main-title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.main-paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  width: 519px;
+  margin-top: 24px;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+/* Cards Section */
+.cards {
+  background: #f4f8fd;
+  width: 100%;
+  padding-top: 111px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 22px;
+}
+
+.card {
+  width: 501px;
+  height: 666px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.card-text {
+  width: 380px;
+  height: 250px;
+  margin: 51px auto 40px auto;
+}
+
+.card-img {
+  width: 100%;
+  height: 325px;
+  background-image: url("../images/card1-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 46px;
+  color: #000000;
+  text-align: center;
+  width: 270px;
+}
+
+.card-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.purchase {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 9px 32px;
+  color: #09183f;
+  border: 1px solid #09183f;
+  border-radius: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /*.cards {
+    flex-direction: column;
+    align-items: center;
+  }*/
+
+  .nav-list,
+  .search {
+    display: none;
+  }
+}
